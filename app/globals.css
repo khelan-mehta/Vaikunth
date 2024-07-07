@@ -1,4 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.customScrollBar::-webkit-scrollbar {
+  margin: 10px;
+  width: 0px;
+}
+
+.lancelot-regular {
+  font-family: "Lancelot", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.customScrollBar::-webkit-scrollbar-track {
+  background-color: #fff8f3;
+  cursor: pointer;
+}
+
+.customScrollBar::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 2px black;
+  cursor: grab;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.padded {
+  padding: 20px 3rem;
+}
+
+.customScrollBar2::-webkit-scrollbar {
+  width: 40%;
+
+  margin: 0 3rem;
+}
+
+.customScrollBar2::-webkit-scrollbar-track {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 20rem;
+  position: fixed;
+  bottom: 3rem;
+  width: 70vw;
+  margin-top: -3rem;
+}
+
+.customScrollBar2::-webkit-scrollbar-thumb {
+  background-color: #650002;
+  border-radius: 20px;
+  box-shadow: inset 0 0 2px black;
+  cursor: grab;
+
+}

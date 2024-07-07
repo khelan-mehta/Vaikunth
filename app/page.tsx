@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <div
       onWheel={handleWheel}
-      className="h-screen transition-all overflow-hidden "
+      className="  "
     >
       <div
         className={
@@ -83,7 +83,7 @@ export default function Home() {
         }
         style={{ height: `${height}vh` }}
       >
-        <div className="relative z-10 flex items-center justify-center h-full text-white">
+        <div className="relative flex items-center justify-center h-full text-white">
           {height === 100 && (
             <motion.div initial="hidden" animate="show" variants={fadeIn}>
               <Image src={krishna} alt="Krishna png" width={400} height={200} />

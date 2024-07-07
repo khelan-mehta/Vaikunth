@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Icons } from "./Icons";
 import { User2, Menu, X, Home, Info, MenuIcon, Settings } from "lucide-react"; // Assuming you have these icons
 import { delay, motion } from "framer-motion";
+import Link from "next/link";
 
 const staggerContainer = {
   hidden: { opacity: 0 },
@@ -28,13 +29,18 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex flex-col w-screen p-8 overflow-hidden">
+      <div className="flex flex-col w-screen p-8 overflow-hidden z-[100]" style={{zIndex: "100"}}>
         <div className="flex justify-between items-center">
           <div className="flex sm:ml-0 ml-[-30px]">
             <Icons.Logo />
           </div>
-          <div className="hidden md:flex gap-12 uppercase items-center font-semibold text-[18px]">
-            <div className="self-center">Home</div>
+          <div className="hidden md:flex gap-12 uppercase items-center font-semibold  text-[18px]">
+            <Link href={"/gallery"}>
+              <div className="self-center cursor-pointer">Gallery</div>
+            </Link>
+            <Link href={"/"}>
+              <div className="self-center cursor-pointer">Home</div>
+            </Link>
             <div className="self-center">About</div>
             <div className="self-center">Menu</div>
             <button className="p-3 bg-[#f78764] uppercase rounded-[50%] text-white">
@@ -42,7 +48,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="z-100 mt-4 sm:mt-0">
+            <button onClick={toggleMenu} className="z-50 mt-4 sm:mt-0">
               {isMenuOpen ? <X /> : <Menu />}
             </button>
           </div>

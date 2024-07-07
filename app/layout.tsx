@@ -16,8 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden bg-[#f9f5e9]">
-      <body className={inter.className}>
+    <html lang="en" className="">
+      <body
+        className={
+          inter.className + " overflow-x-hidden bg-[#f9f5e9] customScrollBar2  "
+        }
+      >
         <div className="absolute top-0 ">
           <Navbar />
         </div>

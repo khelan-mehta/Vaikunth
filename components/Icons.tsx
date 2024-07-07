@@ -1044,6 +1044,7 @@ export const Icons = {
     <svg
       width={width}
       height={height}
+      
       viewBox="0 0 1440 1117"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
